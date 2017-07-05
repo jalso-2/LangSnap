@@ -35,3 +35,28 @@
 @import "./app.blue";
 
 @import "./app.red";
+
+ @font-face {
+  font-family: 'Lily Script One';
+  src: url('../assets/fonts/LilyScriptOne-Regular.woff') format('woff'), url('../assets/fonts/LilyScriptOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  }
+  .toolbar-title .add_title_btn .ion-button{
+    font-family: 'Lily Script One';
+  }
+  .tool-button{
+    background-color: map-get($colors, primary);
+    color: map-get($colors, secondary);
+    height: 35px;
+    font-size:1.3em;
+    // font-family:  Courier, Courier New, monospace;
+    font-family: $font1;
+  }
+  // *{
+  //   font-family: 'Lily Script One';
+  // }
+  .menuItems{
+    font-family: 'Lily Script One';
+  }
