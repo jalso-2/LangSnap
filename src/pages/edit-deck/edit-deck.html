@@ -9,7 +9,8 @@
 
 
 <ion-content padding>
-  <ion-title>{{deckName}}</ion-title>
+  <h2 color="red !important" text-center>{{ deckName }}</h2>
+  <!--<ion-title>{{deckName}}</ion-title>-->
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <ion-list>
     <ion-item-sliding tappable *ngFor="let item of items; let i=index"> 
