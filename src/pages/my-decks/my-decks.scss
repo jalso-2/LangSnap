@@ -18,33 +18,49 @@ page-my-decks {
   // color: skyblue;
   // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva,' 'Verdana', sans-serif !important;
   font-family: 'RalewayM' !important;
-  color: maroon;
+  color: white;
   // color:map-get($colors, try-this-one-on);
   // -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color:map-get($colors, try-this-one-on);
   }
 .card-subtitle {
-  font-size: 1.3em;
+  font-size: 1.0em;
   position: absolute;
-  top: 35%;
-  left: 17%;
+  top: 75%;
+  left: 18%;
   width: 100%;
-  color:map-get($colors, primary);
-  font-family: 'RalewayB';
+  color:white;
+  font-family: 'RalewayM';
   // -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color:map-get($colors, primary);
 }
   .full-image{
     width: 100%;
     height: 100%;
-    background: linear-gradient(bottom, white, white);
-    opacity:.6;
+    // background: linear-gradient(bottom, white, white);
+    opacity:.5;
 
   }
 .my-card .item.item-image{
   width: 100vw;
   margin-left: -10px;
 }
+.background {
+  height: 100px;
+   width: 800px;
+   display: block;
+    // background-image: url('http://jasonlefkowitz.net/wp-content/uploads/2013/07/Cute-Cats-cats-33440930-1280-800.jpg');    
+}
+.black-gradient {
+    z-index:0;
+    // width: 800px;
+    // height: 100px;
+    // position:absolute;
+    // opacity: 1;
+
+    background-image: linear-gradient(to right, rgba(0,0,0,1) , rgba(0,0,0,1) 40%, rgba(0,0,0,0)); 
+}
+
 
 .my-card.card{
   overflow: visible;

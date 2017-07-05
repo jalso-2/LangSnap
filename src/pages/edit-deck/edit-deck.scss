@@ -1,3 +1,6 @@
 page-edit-deck {
-
+ h2{
+   color: map-get($colors, primary) !important;
+   font-family: 'RalewayM';
+ }
 }

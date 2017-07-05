@@ -12,18 +12,20 @@
   <ion-list>
     <ion-item-sliding class="my-card-f" *ngFor="let item of items; let i = index">
       <ion-item tappable class="my-decks-deck-f" (click)="openCard(item.id)">
+        <div class="black-gradient" >
+
         <img class="full-image-f" [src]="item.cards[0].imgUrl" />
         <div class="card-title">{{item.name}}</div>
         <div class="card-subtitle">{{ card(item.cards.length, item.cards[0].imgUrl) }}</div>
         <div class="card-added">{{item.status}}</div>
-        
+        </div>
       </ion-item>
       <ion-item-options side="right">
         <button ion-button color="primary" (click)="openCard(item.id)">
         <ion-icon name="eye"></ion-icon>
         {{ 'VIEW' | translate }}
       </button>
-        <button ion-button color="danger" (click)="addDeckToUser(item.id, i)">
+        <button ion-button color="try-this-one-on" (click)="addDeckToUser(item.id, i)">
         <ion-icon name="add-circle"></ion-icon>
           {{ 'ADD' | translate }}
       </button>
